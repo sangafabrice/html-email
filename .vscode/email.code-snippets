@@ -6,5 +6,24 @@
 			"<meta name=\"color-scheme\" content=\"${1|light,dark,light dark|}\" />",
 			"<meta name=\"supported-color-schemes\" content=\"${1|light,dark,light dark|}\" />"
 		]
+	},
+	"Colour scheme root declaration": {
+		"scope": "css",
+		"prefix": ":root",
+		"body": [
+			":root {",
+			"\tcolor-scheme: ${1|light,dark,light dark|};",
+			"\tsupported-color-scheme: ${1|light,dark,light dark|};",
+			"}"
+		]
+	},
+	"Colour scheme media query": {
+		"scope": "css",
+		"prefix": "media:cs",
+		"body": [
+			"@media (prefers-color-scheme: ${1|light,dark|}) {",
+			"\t$0",
+			"}"
+		]
 	}
 }
