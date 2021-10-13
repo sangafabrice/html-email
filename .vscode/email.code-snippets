@@ -1,10 +1,58 @@
 {
-	"": {
-		"scope": "",
-		"prefix": "",
+	"Colour scheme meta tag": {
+		"scope": "html",
+		"prefix": "meta:cs",
 		"body": [
-
+			"<meta name=\"color-scheme\" content=\"${1|light,dark,light dark|}\" />",
+			"<meta name=\"supported-color-schemes\" content=\"${1|light,dark,light dark|}\" />"
+		]
+	},
+	"CSS reset": {
+		"scope": "css",
+		"prefix": "css:rst",
+		"body": [
+			"div[style*=\"margin: 16px 0\"] {",
+				"\tmargin: 0 !important;",
+			"}",
+			"#MessageViewBody, #MessageWebViewDiv {",
+				"\twidth: 100% !important;",
+			"}",
+			"a[x-apple-data-detectors], .unstyle-auto-detected-links a, .aBn, u + .body a {",
+				"\tborder-bottom: 0 !important;",
+				"\tcursor: default !important;",
+				"\tcolor: inherit !important;",
+				"\ttext-decoration: none !important;",
+				"\tfont-size: inherit !important;",
+				"\tfont-family: inherit !important;",
+				"\tfont-weight: inherit !important;",
+				"\tline-height: inherit !important;",
+			"}",
+			".im {",
+				"\tcolor: inherit !important;",
+			"}",
+			".a6S {",
+				"\tdisplay: none !important;",
+				"\topacity: 0.01 !important;",
+			"}",
+			"img.g-img + div {",
+				"\tdisplay: none !important;",
+			"}",
+			"@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {",
+				"\tu ~ div .email-container {",
+					"\t\tmin-width: 320px !important;",
+				"\t}",
+			"}",
+			"@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {",
+				"\tu ~ div .email-container {",
+					"\t\tmin-width: 375px !important;",
+				"\t}",
+			"}",
+			"@media only screen and (min-device-width: 414px) {",
+				"\tu ~ div .email-container {",
+					"\t\tmin-width: 414px !important;",
+				"\t}",
+			"}"
 		],
-		"description": ""
+		"description": "div[style*=\"margin: 16px 0\"] : Center email on Android 4.4.\na[x-apple-data-detectors], .unstyle-auto-detected-links a, .aBn, u + .body a : Undecorate auto detected links.\n.im : Prevent Gmail from changing the text colour in conversation threads.\n.a6S : Prevent Gmail from displaying a download button on large, non-linked images (in case it does not use 'img.g-img + div').\n@media... : Remove right gutter in Gmail iOS app."
 	}
 }
