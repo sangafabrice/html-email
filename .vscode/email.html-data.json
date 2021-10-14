@@ -2,14 +2,28 @@
     "version": 1.1,
     "tags": [
         {
-            "name": "",
-            "description": "",
+            "name": "meta",
+            "description": "Color scheme meta tag.",
             "attributes": [
                 {
-                    "name": "",
+                    "name": "name",
                     "values": [
                         {
-                            "name": ""
+                            "name": "color-scheme"
+                        },
+                        {
+                            "name": "supported-color-schemes"
+                        }
+                    ]
+                },
+                {
+                    "name": "content",
+                    "values": [
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "dark"
                         }
                     ]
                 }
@@ -18,16 +32,96 @@
     ],
     "globalAttributes": [
         {
-            "name": "",
-            "description": "",
-            "valueSet": ""
+            "name": "align",
+            "description": "Text align attribute",
+            "valueSet": "text-align"
+        },
+        {
+            "name": "valign",
+            "description": "Vertical text align attribute",
+            "valueSet": "vertical-align"
+        },
+        {
+            "name": "class",
+            "description": "Some imprtant classes",
+            "valueSet": "html-email-class"
         }
     ],
     "valueSets": [
         {
-            "name": "",
+            "name": "text-align",
             "values": [
-
+                {
+                    "name": "left"
+                },
+                {
+                    "name": "center"
+                },
+                {
+                    "name": "right"
+                }
+            ]
+        },
+        {
+            "name": "vertical-align",
+            "values": [
+                {
+                    "name": "top"
+                },
+                {
+                    "name": "middle"
+                },
+                {
+                    "name": "bottom"
+                },
+                {
+                    "name": "baseline"
+                }
+            ]
+        },
+        {
+            "name": "html-email-class",
+            "values": [
+                {
+                    "name": "email-container",
+                    "description": "Email container"
+                },
+                {
+                    "name": "g-img",
+                    "description": "Large, non-linked images"
+                },
+                {
+                    "name": "unstyle-auto-detected-links",
+                    "description": "A work-around for email clients meddling in triggered links"
+                },
+                {
+                    "name": "button-td",
+                    "description": ""
+                },
+                {
+                    "name": "button-a",
+                    "description": ""
+                },
+                {
+                    "name": "button-td-primary",
+                    "description": ""
+                },
+                {
+                    "name": "button-a-primary",
+                    "description": ""
+                },
+                {
+                    "name": "stack-column",
+                    "description": "Forces table cells into full-width rows."
+                },
+                {
+                    "name": "stack-column-center",
+                    "description": "Forces table cells into full-width rows and center it."
+                },
+                {
+                    "name": "center-on-narrow",
+                    "description": "Generic utility class for centering. Useful for images, buttons, and nested tables."
+                }
             ]
         }
     ]
