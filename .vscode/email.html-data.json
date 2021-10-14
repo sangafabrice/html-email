@@ -33,17 +33,15 @@
     "globalAttributes": [
         {
             "name": "align",
-            "description": "Text align attribute",
             "valueSet": "text-align"
         },
         {
             "name": "valign",
-            "description": "Vertical text align attribute",
             "valueSet": "vertical-align"
         },
         {
             "name": "class",
-            "description": "Some imprtant classes",
+            "description": "Some important classes",
             "valueSet": "html-email-class"
         }
     ],
