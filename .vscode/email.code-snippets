@@ -54,14 +54,5 @@
 			"<![endif]-->"
 		],
 		"description": "Required : MSO XML namespace attribute."
-	},
-	"MSO conditional CSS": {
-		"scope": "html",
-		"prefix": "mso:if",
-		"body": [
-			"<!--[if mso]>",
-			"$0",
-			"<![endif]-->"
-		]
 	}
 }
