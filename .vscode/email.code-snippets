@@ -25,5 +25,34 @@
 			"\t$0",
 			"}"
 		]
+	},
+	"VML XML namespace attribute": {
+		"scope": "html",
+		"prefix": "xmlns:v",
+		"body": [
+			"xmlns:v=\"urn:schemas-microsoft-com:vml\""
+		]
+	},
+	"MSO XML namespace attribute": {
+		"scope": "html",
+		"prefix": "xmlns:o",
+		"body": [
+			"xmlns:o=\"urn:schemas-microsoft-com:office:office\""
+		]
+	},
+	"MSO background image fix": {
+		"scope": "html",
+		"prefix": "mso:bg",
+		"body": [
+			"<!--[if gte mso 9]>",
+			"<xml>",
+				"\t<o:OfficeDocumentSettings>",
+					"\t\t<o:AllowPNG/>",
+					"\t\t<o:PixelsPerInch>96</o:PixelsPerInch>",
+				"\t</o:OfficeDocumentSettings>",
+			"</xml>",
+			"<![endif]-->"
+		],
+		"description": "Required : MSO XML namespace attribute."
 	}
 }
