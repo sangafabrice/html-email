@@ -9,14 +9,27 @@
             "__meta:ap": "meta[name=\"x-apple-disable-message-reformatting\"]/",
             "__meta:fd": "meta[name=\"format-detection\" content=\"telephone=no, address=no, email=no, date=no, url=no\"]/",
             "__meta:au": "meta[name=\"author\" content=\"Fabrice Sanga\"]/",
-            "mso": "<!--[if mso]>\n${1}\n<![endif]-->",
-            "mso:if": "<!--[if mso]><!-->${1}<!--<![endif]-->",
-            "mso:not": "<!--[if !mso]><!-->${1}<!--<![endif]-->",
-            "mso:9": "<!--[if gte mso 9]><!-->${1}<!--<![endif]-->",
-            "mso:ie": "<!--[if mso | IE]><!-->${1}<!--<![endif]-->",
-            "mso:9ie": "<!--[if gte mso 9 | IE]><!-->${1}<!--<![endif]-->",
-            "mso:tfl": "<!--[if mso | IE]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"left\" valign=\"top\" style=\"width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if mso | IE]>\n</td>\n</tr>\n</table>\n<![endif]-->",
-            "meta": "(mso:not>__meta:ct+__meta:ie)+__meta:vp+__meta:ap+__meta:fd+__meta:au",
+            "mso": "<!--[if mso]>${1}<![endif]-->",
+            "mso:!": "<!--[if !mso]><!-->${1}<!--<![endif]-->",
+            "mso:9": "<!--[if gte mso 9]>${1}<![endif]-->",
+            "mso:ie": "<!--[if mso | IE]>${1}<![endif]-->",
+            "mso:9ie": "<!--[if gte mso 9 | IE]>${1}<![endif]-->",
+            "mso:s": "<!--[if mso]>",
+            "mso:9s": "<!--[if gte mso 9]>",
+            "mso:ies": "<!--[if mso | IE]>",
+            "mso:9ies": "<!--[if gte mso 9 | IE]>",
+            "mso:e": "<![endif]-->",
+            "mtb": "<!--[if mso]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 600px; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 100%; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if mso]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:f": "<!--[if mso]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 600px; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if mso]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:ie": "<!--[if mso | IE]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 600px; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 100%; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if mso | IE]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:ief": "<!--[if mso | IE]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 600px; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if mso | IE]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:9": "<!--[if gte mso 9]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 600px; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 100%; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if gte mso 9]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:9f": "<!--[if gte mso 9]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 600px; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if gte mso 9]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:9ie": "<!--[if gte mso 9 | IE]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 600px; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 100%; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if gte mso 9 | IE]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "mtb:9ief": "<!--[if gte mso 9 | IE]>\n<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; border-width: 0; border-collapse: collapse; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<tr>\n<td align=\"center\" valign=\"top\" style=\"width: 600px; text-align: center; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;\">\n<![endif]-->${1}<!--[if gte mso 9 | IE]>\n</td>\n</tr>\n</table>\n<![endif]-->",
+            "gtable": "mtb:ie",
+            "gtable:f": "mtb:ief",
+            "meta": "(mso:!>__meta:ct+__meta:ie)+__meta:vp+__meta:ap+__meta:fd+__meta:au",
             "style": "style[type=\"text/css\"]",
             "__style:rst": "style{div[style*=\"margin: 16px 0\"] \\{\n\tmargin: 0 !important;\n\\}\n#MessageViewBody, #MessageWebViewDiv \\{\n\twidth: 100% !important;\n\\}\na[x-apple-data-detectors], .unstyle-auto-detected-links a, .aBn, u + .body a \\{\n\tborder-bottom: 0 !important;\n\tcursor: default !important;\n\tcolor: inherit !important;\n\ttext-decoration: none !important;\n\ttext-underline: none !important;\n\tfont-size: inherit !important;\n\tfont-family: inherit !important;\n\tfont-weight: inherit !important;\n\tline-height: inherit !important;\n\\}\n.im \\{\n\tcolor: inherit !important;\n\\}\n.a6S \\{\n\tdisplay: none !important;\n\topacity: 0.01 !important;\n\\}\nimg.g-img + div \\{\n\tdisplay: none !important;\n\\}\n@media only screen and (min-device-width: 320px) and (max-device-width: 374px) \\{\n\tu ~ div .email-container \\{\n\t\tmin-width: 320px !important;\n\t\\}\n\\}\n@media only screen and (min-device-width: 375px) and (max-device-width: 413px) \\{\n\tu ~ div .email-container \\{\n\t\tmin-width: 375px !important;\n\t\\}\n\\}\n@media only screen and (min-device-width: 414px) \\{\n\tu ~ div .email-container \\{\n\t\tmin-width: 414px !important;\n\t\\}\n\\}}",
             "head": "head>meta+title{HTML Email}+__style:rst",
@@ -33,8 +46,9 @@
     },
     "css": {
         "snippets": {
-            "txtsa": "-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;",
-            "msosp": "mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+            "txsa": "-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;",
+            "tbsp": "mso-table-lspace: 0pt; mso-table-rspace: 0pt;",
+            "flwd": "width: 100%; min-width: 480px; max-width: 600px;"
         }
     }
 }

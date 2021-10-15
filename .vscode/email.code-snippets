@@ -54,5 +54,33 @@
 			"<![endif]-->"
 		],
 		"description": "Required : MSO XML namespace attribute."
+	},
+	"MSO start comment": {
+		"scope": "html",
+		"prefix": "mso:s",
+		"body": [
+			"<!--[if mso]>"
+		]
+	},
+	"MSO 9+ start comment": {
+		"scope": "html",
+		"prefix": "mso:9s",
+		"body": [
+			"<!--[if gte mso 9]>"
+		]
+	},
+	"MSO\\IE start comment": {
+		"scope": "html",
+		"prefix": "mso:ies",
+		"body": [
+			"<!--[if mso | IE]>"
+		]
+	},
+	"MSO 9+\\IE start comment": {
+		"scope": "html",
+		"prefix": "mso:9ies",
+		"body": [
+			"<!--[if gte mso 9 | IE]>"
+		]
 	}
 }
