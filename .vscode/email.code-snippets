@@ -82,5 +82,15 @@
 		"body": [
 			"<!--[if gte mso 9 | IE]>"
 		]
+	},
+	"CSS media query 480px": {
+		"scope": "css",
+		"prefix": "media:480",
+		"body": [
+			"@media screen and (max-width: 479.99px) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Media query for screen width 480px."
 	}
 }
