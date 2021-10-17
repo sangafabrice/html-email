@@ -1,27 +1,31 @@
 {
 	"Colour scheme meta tag": {
 		"scope": "html",
-		"prefix": "meta:cs",
+		"prefix": "meta:color-scheme",
 		"body": [
-			"<meta name=\"color-scheme\" content=\"${1|light,dark,light dark|}\" />",
-			"<meta name=\"supported-color-schemes\" content=\"${1|light,dark,light dark|}\" />"
+			"<meta name=\"color-scheme\" content=\"${1|light,light dark|}\" />",
+			"<meta name=\"supported-color-schemes\" content=\"${1|light,light dark|}\" />"
 		]
 	},
-	"Colour scheme root declaration": {
+	"Light colour scheme": {
 		"scope": "css",
-		"prefix": ":root",
+		"prefix": "root:light",
 		"body": [
 			":root {",
-			"\tcolor-scheme: ${1|light,dark,light dark|};",
-			"\tsupported-color-scheme: ${1|light,dark,light dark|};",
-			"}"
+			"\tcolor-scheme: light;",
+			"\tsupported-color-scheme: light",
+			"}",
 		]
 	},
-	"Colour scheme media query": {
+	"Dark colour scheme root": {
 		"scope": "css",
-		"prefix": "media:cs",
+		"prefix": "root:dark",
 		"body": [
-			"@media (prefers-color-scheme: ${1|light,dark|}) {",
+			":root {",
+			"\tcolor-scheme: light dark;",
+			"\tsupported-color-scheme: light dark;",
+			"}",
+			"@media (prefers-color-scheme: dark) {",
 			"\t$0",
 			"}"
 		]
@@ -39,21 +43,6 @@
 		"body": [
 			"xmlns:o=\"urn:schemas-microsoft-com:office:office\""
 		]
-	},
-	"MSO background image fix": {
-		"scope": "html",
-		"prefix": "mso:bg",
-		"body": [
-			"<!--[if gte mso 9]>",
-			"<xml>",
-				"\t<o:OfficeDocumentSettings>",
-					"\t\t<o:AllowPNG/>",
-					"\t\t<o:PixelsPerInch>96</o:PixelsPerInch>",
-				"\t</o:OfficeDocumentSettings>",
-			"</xml>",
-			"<![endif]-->"
-		],
-		"description": "Required : MSO XML namespace attribute."
 	},
 	"MSO start comment": {
 		"scope": "html",
@@ -87,10 +76,82 @@
 		"scope": "css",
 		"prefix": "media:480",
 		"body": [
-			"@media screen and (max-width: 479.99px) {",
+			"@media screen and (max-width: 479.98px) {",
 			"\t$0",
 			"}"
 		],
 		"description": "Media query for screen width 480px."
+	},
+	"@import font": {
+		"scope": "css",
+		"prefix": "import",
+		"body": [
+			"@import url('https://fonts.googleapis.com/css2?family=${1|Roboto:wght@100;300;400;500;700;900,Lato:wght@100;300;400;700;900,Poppins:wght@100;200;300;400;500;600;700;800;900|}&display=swap');"
+		]
+	},
+	"Font settings": {
+		"scope": "css",
+		"prefix": "import",
+		"body": [
+			"@import url('https://fonts.googleapis.com/css2?family=${1|Roboto:wght@100;300;400;500;700;900,Lato:wght@100;300;400;700;900,Poppins:wght@100;200;300;400;500;600;700;800;900|}&display=swap');"
+		]
+	},
+	"Inline font": {
+		"scope": "html",
+		"prefix": "font",
+		"body": [
+			"font-family:${1| Roboto, Lato, Poppins|},  Tahoma, sans-serif, Arial, Helvetica; font-size: 16px; line-height: 16px; color: #555555;"
+		]
+	},
+	"Inline Segoe font": {
+		"scope": "html",
+		"prefix": "font:segoe",
+		"body": [
+			"font-family:${1| wf_segoe-ui_normal, wf_segoe-ui_light, wf_segoe-ui_semibold, wf_segoe-ui_semilight|}, Tahoma, sans-serif, Arial, Helvetica; font-size: 16px; line-height: 16px; color: #555555;"
+		]
+	},
+	"Inline fallback font": {
+		"scope": "html",
+		"prefix": "font:fb",
+		"body": [
+			"font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 16px; line-height: 16px; color: #555555;"
+		]
+	},
+	"Progressive enhancements": {
+		"scope": "css",
+		"prefix": "css:prog-enhancement",
+		"body": [
+			".button-td, .button-a {",
+				"\ttransition: all 100ms ease-in;",
+			"}",
+			".button-td-primary:hover, .button-a-primary:hover {",
+				"\tbackground: #555555 !important;",
+				"\tborder-color: #555555 !important;",
+			"}",
+			"@media screen and (max-width: 479.98px) {",
+				"\t.stack-column, .stack-column-center {",
+					"\t\tdisplay: block !important;",
+					"\t\twidth: 100% !important;",
+					"\t\tmax-width: 100% !important;",
+					"\t\tdirection: ltr !important;",
+				"\t}",
+				"\t.stack-column-center {",
+					"\t\ttext-align: center !important;",
+				"\t}",
+				"\t.center-on-narrow {",
+					"\t\ttext-align: center !important;",
+					"\t\tdisplay: block !important;",
+					"\t\tmargin-left: auto !important;",
+					"\t\tmargin-right: auto !important;",
+					"\t\tfloat: none !important;",
+				"\t}",
+				"\ttable.center-on-narrow {",
+					"\t\tdisplay: inline-block !important;",
+				"\t}",
+				"\t.email-container p {",
+					"\t\tfont-size: 17px !important;",
+				"\t}",
+			"}"
+		]
 	}
 }
