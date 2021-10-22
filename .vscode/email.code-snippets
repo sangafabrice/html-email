@@ -82,23 +82,16 @@
 		],
 		"description": "Media query for screen width 480px."
 	},
-	"@import font": {
+	"@import Google font": {
 		"scope": "css",
 		"prefix": "import",
 		"body": [
 			"@import url('https://fonts.googleapis.com/css2?family=${1|Roboto:wght@100;300;400;500;700;900,Lato:wght@100;300;400;700;900,Poppins:wght@100;200;300;400;500;600;700;800;900|}&display=swap');"
 		]
 	},
-	"Font settings": {
-		"scope": "css",
-		"prefix": "import",
-		"body": [
-			"@import url('https://fonts.googleapis.com/css2?family=${1|Roboto:wght@100;300;400;500;700;900,Lato:wght@100;300;400;700;900,Poppins:wght@100;200;300;400;500;600;700;800;900|}&display=swap');"
-		]
-	},
-	"Inline font": {
+	"Inline Google font": {
 		"scope": "html",
-		"prefix": "font",
+		"prefix": "font:google",
 		"body": [
 			"font-family:${1| Roboto, Lato, Poppins|},  Tahoma, sans-serif, Arial, Helvetica; font-size: 16px; line-height: 16px; color: #555555;"
 		]
@@ -112,7 +105,7 @@
 	},
 	"Inline fallback font": {
 		"scope": "html",
-		"prefix": "font:fb",
+		"prefix": "font:fallback",
 		"body": [
 			"font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 16px; line-height: 16px; color: #555555;"
 		]
